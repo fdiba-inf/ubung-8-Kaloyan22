@@ -21,6 +21,7 @@ public class Point {
 
     public void initialize() {
         Scanner input = new Scanner(System.in);
+        
         x = input.nextDouble();
         y = input.nextDouble();
     }
@@ -31,10 +32,10 @@ public class Point {
     }
 
     public Point createNewTranslatedPoint(double xDelta, double yDelta) {
-        Point np = new Point();
-        np.x = x + xDelta;
-        np.y = y + yDelta;
-    return np;
+        Point newPoint = new Point();
+        newPoint.x = x + xDelta;
+        newPoint.y = y + yDelta;
+    return newPoint;
     }
 
     public boolean equals(Point otherPoint) {
